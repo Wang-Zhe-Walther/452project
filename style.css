@@ -1,0 +1,225 @@
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    flex-direction: column;  
+    min-height: 100vh; /* Make the page occupy at least viewport height
+    */  
+}  
+  
+header {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 15px;  
+    background-color: green; /* Navigation bar background color changed to green
+    */  
+}  
+  
+.logo1-container1 { 
+    width: 150px; /* You can resize your logo according to your needs
+    */  
+    height: 50px;   
+    display: flex;  
+    align-items: center;  
+}  
+  
+ 
+
+.logo1 {  
+    width: 150px; /* You can resize your logo according to your needs
+    */  
+    height: 50px;  
+}  
+  
+
+
+.nav-links {  
+    list-style-type: none;  
+    padding: 0;  
+    margin: 0;  
+    display: flex;  
+}  
+  
+.nav-links li {  
+    margin-left: 10px;  
+}  
+  
+.nav-links li a {  
+    text-decoration: none;  
+    color: white; /* The text color of the navigation bar button is set to white
+    */  
+    font-weight: bold;  
+    padding: 5px 10px; /* Add padding to the button
+    */  
+    border-radius: 5px; /* Add rounded corners to the buttons
+    */  
+    transition: background-color 0.3s ease; /* Add transition effects
+    */  
+}  
+  
+.nav-links li a:hover {  
+    background-color: darkgreen; /* Change button background color when hovering
+    */  
+}  
+  
+main {  
+    flex: 1; /* Make main occupy all the space except the header and footer
+    */  
+    padding: 20px;  
+    text-align: center;  
+}  
+  
+.title-container {  
+    margin-bottom: 20px;  
+}  
+  
+.search-container {  
+    margin-bottom: 20px;  
+}  
+  
+.search-container input[type=text] {  
+    padding: 5px;  
+    width: 300px;  
+    border-radius: 5px;  
+    border: 1px solid #ccc;  
+}  
+  
+.search-container button {  
+    padding: 5px 10px;  
+    background-color: green;  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+}  
+  
+footer {  
+    background-color: black; /* Footer background color changed to black
+    */  
+    color: white; /* The footer text color is set to white
+    */  
+    padding: 15px;  
+    text-align: center;  
+    margin-top: auto; /* Fix the footer at the bottom of the page
+    */  
+}  
+  
+.footer-logo {  
+    margin-bottom: 10px;  
+}  
+  
+.footer-text {  
+    margin-bottom: 10px;  
+}  
+  
+.footer-links a {  
+    color: white;  
+    text-decoration: none;  
+    margin: 0 5px;  
+}  
+  
+.footer-copyright {  
+    font-size: 0.8em;  
+}
+
+.title-container {
+    margin-bottom: 20px;
+    text-align: center; /* New: Center the title
+    */
+}
+
+.process-steps {
+    list-style-type: none; /* Remove default bullet
+    */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* New: Center a process step item
+    */
+}
+
+.process-steps li {
+    margin-bottom: 10px;
+}
+
+.process-steps {
+    list-style-type: none; /* Remove default bullet
+    */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* New: Center a process step item
+    */
+}
+
+.process-steps li {
+    margin-bottom: 10px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Add this line so that the content level is centered
+    */
+    margin: 0 auto; /* Adding this line makes the entire section center in the main container
+    */
+    max-width: 700px;
+    width: 100%; /* Add this line to make sure that the section fits within the width of the container
+    */
+}
+
+.product-image-container {
+    flex-basis: 40%; /* Adjust the proportion of the image
+    */
+    margin-right: 20px; /* Add space between picture and description
+    */
+}
+
+.product img {
+    max-width: 400px; /* Replace this value with the maximum width you want
+    */
+    height: auto;
+}
+
+.product-info-container {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-description {
+    /* 保留之前的样式... */
+}
+.price {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-weight: bold;
+}
+
+#news h1 {
+    margin-bottom: 20px;
+}
+
+#news p {
+    line-height: 1.5;
+}
+
+#customer-feedback h2 {
+    margin-bottom: 10px;
+}
+
+.rating-snapshot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating-snapshot button {
+    cursor: pointer;
+}
