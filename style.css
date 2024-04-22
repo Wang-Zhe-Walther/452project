@@ -1,0 +1,212 @@
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    flex-direction: column;  
+    min-height: 100vh; /* 使页面至少占据视口高度 */  
+}  
+  
+header {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 15px;  
+    background-color: green; /* 导航栏背景色改为绿色 */  
+}  
+  
+.logo1-container1 { 
+    width: 150px; /* 您可以根据需要调整logo的大小 */  
+    height: 50px;   
+    display: flex;  
+    align-items: center;  
+}  
+  
+.logo2-container2 {  
+    width: 250px; /* 您可以根据需要调整logo的大小 */  
+    height: 250px;  
+    display: flex;  
+    align-items: center;  
+}  
+
+.logo1 {  
+    width: 150px; /* 您可以根据需要调整logo的大小 */  
+    height: 50px;  
+}  
+  
+.logo2 {  
+    width: 250px; /* 您可以根据需要调整logo的大小 */  
+    height: 250px;  
+}  
+
+.nav-links {  
+    list-style-type: none;  
+    padding: 0;  
+    margin: 0;  
+    display: flex;  
+}  
+  
+.nav-links li {  
+    margin-left: 10px;  
+}  
+  
+.nav-links li a {  
+    text-decoration: none;  
+    color: white; /* 导航栏按钮文字颜色设为白色 */  
+    font-weight: bold;  
+    padding: 5px 10px; /* 为按钮增加内边距 */  
+    border-radius: 5px; /* 为按钮增加圆角 */  
+    transition: background-color 0.3s ease; /* 添加过渡效果 */  
+}  
+  
+.nav-links li a:hover {  
+    background-color: darkgreen; /* 鼠标悬停时改变按钮背景色 */  
+}  
+  
+main {  
+    flex: 1; /* 使main占据除了header和footer外的所有空间 */  
+    padding: 20px;  
+    text-align: center;  
+}  
+  
+.title-container {  
+    margin-bottom: 20px;  
+}  
+  
+.search-container {  
+    margin-bottom: 20px;  
+}  
+  
+.search-container input[type=text] {  
+    padding: 5px;  
+    width: 300px;  
+    border-radius: 5px;  
+    border: 1px solid #ccc;  
+}  
+  
+.search-container button {  
+    padding: 5px 10px;  
+    background-color: green;  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+}  
+  
+footer {  
+    background-color: black; /* 页脚背景色改为黑色 */  
+    color: white; /* 页脚文字颜色设为白色 */  
+    padding: 15px;  
+    text-align: center;  
+    margin-top: auto; /* 使页脚固定在页面底部 */  
+}  
+  
+.footer-logo {  
+    margin-bottom: 10px;  
+}  
+  
+.footer-text {  
+    margin-bottom: 10px;  
+}  
+  
+.footer-links a {  
+    color: white;  
+    text-decoration: none;  
+    margin: 0 5px;  
+}  
+  
+.footer-copyright {  
+    font-size: 0.8em;  
+}
+
+.title-container {
+    margin-bottom: 20px;
+    text-align: center; /* New: Center the title
+    */
+}
+
+.process-steps {
+    list-style-type: none; /* Remove default bullet
+    */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* New: Center a process step item
+    */
+}
+
+.process-steps li {
+    margin-bottom: 10px;
+}
+
+.process-steps {
+    list-style-type: none; /* 移除默认项目符号 */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 新增：使流程步骤项居中 */
+}
+
+.process-steps li {
+    margin-bottom: 10px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* 添加这一行使得内容水平居中 */
+    margin: 0 auto; /* 添加这一行使得整个section在主容器中居中 */
+    max-width: 700px;
+    width: 100%; /* 添加这一行确保section能适应容器宽度 */
+}
+
+.product-image-container {
+    flex-basis: 40%; /* 调整图片所占比例 */
+    margin-right: 20px; /* 在图片和描述之间添加间距 */
+}
+
+.product img {
+    max-width: 400px; /* 将这个值替换为您希望的最大宽度 */
+    height: auto;
+}
+
+.product-info-container {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-description {
+    /* 保留之前的样式... */
+}
+.price {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-weight: bold;
+}
+
+#news h1 {
+    margin-bottom: 20px;
+}
+
+#news p {
+    line-height: 1.5;
+}
+
+#customer-feedback h2 {
+    margin-bottom: 10px;
+}
+
+.rating-snapshot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating-snapshot button {
+    cursor: pointer;
+}
