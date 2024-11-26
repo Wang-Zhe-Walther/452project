@@ -1,63 +1,106 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Computere-Friend</title>  
-    <link rel="stylesheet" href="style.css">  
-</head>  
-<body>  
-    <header>  
-        <div class="logo1-container1">  
-            <img src="logo1.png" alt="Computere-Friend Logo" class="logo1">  
-        </div>  
-        <nav>  
-            <ul class="nav-links">  
-                <li><a href="index.html"> home-page </a></li>  
-                <li><a href="support.html"> Support </a></li>  
-                <li><a href="product.html">Product </a></li>  
-                <li><a href="aboutus.html">About us </a></li>  
-                <li><a href="news.html">News or Blog</a></li> 
-            </ul>  
-        </nav>  
-    </header>  
-    <main>  
-       
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>News or Blog - Computer Friend</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo1-container1">
+                <img src="logo1.png" alt="Computer Friend Logo" class="logo1">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="news.html">News or Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
         <section id="news">
-            <h1>NEWS</h1>
-            <p>Canalys posted that in the first quarter of 2024, the global personal computer (PC) market showed a healthy growth trend, with total shipments of desktops and laptops increasing by 2.9% year-on-year, reaching 57 million units. The shipment volume of laptops (including mobile workstations) increased by 3.8% to 44.9 million units, while the shipment volume of desktops (including desktop workstations) remained relatively stable, only decreasing by 0.4% to 12.1 million units. Although the growth rate is limited, this indicates that PC demand continues to rebound in various fields, benefiting from the updates of Windows 11 and AI PCs, and the PC market will accelerate growth throughout the year.</p>
-        </section>
-        <section id="customer-feedback">
-            <h2>Customer feedback</h2>
-            <div class="rating-snapshot">
-                <span>5 Stars</span>
-                <input type="radio" name="rating" value="5">
-                <span>4 Stars</span>
-                <input type="radio" name="rating" value="4">
-                <span>3 Stars</span>
-                <input type="radio" name="rating" value="3">
-                <span>2 Stars</span>
-                <input type="radio" name="rating" value="2">
-                <span>1 Stars</span>
-                <input type="radio" name="rating" value="1">
-                <button>submit</button>
+            <div class="container">
+                <h1>News</h1>
+                <p>Canalys posted that in the first quarter of 2024, the global personal computer (PC) market showed a healthy growth trend, with total shipments of desktops and laptops increasing by 2.9% year-on-year, reaching 57 million units. The shipment volume of laptops (including mobile workstations) increased by 3.8% to 44.9 million units, while the shipment volume of desktops (including desktop workstations) remained relatively stable, only decreasing by 0.4% to 12.1 million units. Although the growth rate is limited, this indicates that PC demand continues to rebound in various fields, benefiting from the updates of Windows 11 and AI PCs, and the PC market will accelerate growth throughout the year.</p>
             </div>
         </section>
-    </main>  
-    <footer>  
-        
-        <div class="footer-text">  
-            <p>Contact us</p>  
-        </div>  
-        <div class="footer-links">  
-            <a href="#" class="footer-link">X</a>  
-            <a href="#" class="footer-link">Int</a>  
-            <a href="#" class="footer-link">Facebook</a>  
-        </div>  
-        <div class="footer-copyright">  
-            <p>By Computer Friend © Made in 2024. All rights reserved.</p>  
-        </div>  
-    </footer>  
-</body>  
+        <section id="customer-feedback">
+            <div class="container">
+                <h2>Customer Feedback</h2>
+                <div class="rating-snapshot">
+                    <label for="rating-5">5 Stars</label>
+                    <input type="radio" id="rating-5" name="rating" value="5">
+                    <label for="rating-4">4 Stars</label>
+                    <input type="radio" id="rating-4" name="rating" value="4">
+                    <label for="rating-3">3 Stars</label>
+                    <input type="radio" id="rating-3" name="rating" value="3">
+                    <label for="rating-2">2 Stars</label>
+                    <input type="radio" id="rating-2" name="rating" value="2">
+                    <label for="rating-1">1 Star</label>
+                    <input type="radio" id="rating-1" name="rating" value="1">
+                    <button onclick="submitRating()">Submit</button>
+                </div>
+                <div class="rating-chart">
+                    <div class="bar" data-label="5 Stars" data-count="120"></div>
+                    <div class="bar" data-label="4 Stars" data-count="80"></div>
+                    <div class="bar" data-label="3 Stars" data-count="50"></div>
+                    <div class="bar" data-label="2 Stars" data-count="20"></div>
+                    <div class="bar" data-label="1 Star" data-count="10"></div>
+                </div>
+                <div class="rating-counts">
+                    <span>5 Stars: 120</span>
+                    <span>4 Stars: 80</span>
+                    <span>3 Stars: 50</span>
+                    <span>2 Stars: 20</span>
+                    <span>1 Star: 10</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <p>Contact us</p>
+        </div>
+        <div class="footer-links">
+            <a href="#" class="footer-link">X</a>
+            <a href="#" class="footer-link">Int</a>
+            <a href="#" class="footer-link">Facebook</a>
+        </div>
+        <div class="footer-copyright">
+            <p>By Computer Friend © Made in 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function submitRating() {
+    // Here you can add code to handle the rating submission
+    console.log("Rating submitted");
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const bars = document.querySelectorAll('.rating-chart .bar');
+    const counts = Array.from(bars).map(bar => parseInt(bar.getAttribute('data-count')));
+    const maxCount = Math.max(...counts);
+
+    bars.forEach((bar, index) => {
+        const count = parseInt(bar.getAttribute('data-count'));
+        const percentage = (count / maxCount) * 100;
+        const colors = ['#4CAF50', '#8BC34A', '#FFEB3B', '#FFC107', '#F44336'];
+        bar.style.backgroundColor = colors[index];
+        bar.style.height = '0'; // Start with 0 height
+        bar.style.transition = 'height 1s ease';
+
+        setTimeout(() => {
+            bar.style.height = `${percentage}%`; // Set the height based on the calculated percentage
+        }, 100); // Delay to ensure the transition is visible
+    });
+});
+    </script>
+</body>
 </html>
