@@ -7,24 +7,26 @@
     <title>Computere-Friend</title>
 </head>
 <body>
-     <!-- 导航栏 -->
-     <header>
-        <div class="logo1-container1">
-            <img src="logo1.png" alt="Logo 1" class="logo1">
+    <header>
+        <div class="header-container">
+            <div class="logo1-container1">
+                <img src="logo1.png" alt="Logo 1" class="logo1">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>  
+                    <li><a href="support.html">Support</a></li>  
+                    <li><a href="product.html">Product</a></li>  
+                    <li><a href="aboutus.html">About Us</a></li>  
+                    <li><a href="news.html">News or Blog</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html"> home-page </a></li>  
-                <li><a href="support.html"> Support </a></li>  
-                <li><a href="product.html">Product </a></li>  
-                <li><a href="aboutus.html">About us </a></li>  
-                <li><a href="news.html">News or Blog</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item">
+                <div class="product-image-container">
                 <img src="1.png" alt="Inspiron 15 Laptop">
             </div>
             <div class="product-info-container">
@@ -34,14 +36,18 @@
                 </div>
                 <div class="price">
                     $279.99
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
             </div>
+        </div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="2.png" alt="Latitude 5540 Laptop">
             </div>
             <div class="product-info-container">
@@ -55,14 +61,17 @@
                 </div>
                 <div class="price">
                     $979.00
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="3.png" alt="XPS 13 Laptop">
             </div>
             <div class="product-info-container">
@@ -72,14 +81,17 @@
                 </div>
                 <div class="price">
                     $599.00
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="4.png" alt="Inspiron 16 Laptop">
             </div>
             <div class="product-info-container">
@@ -89,14 +101,17 @@
                 </div>
                 <div class="price">
                     $599.00
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="5.png" alt="Vostro 16 Laptop">
             </div>
             <div class="product-info-container">
@@ -106,14 +121,17 @@
                 </div>
                 <div class="price">
                     $729.00
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="6.png" alt="XPS 15 Laptop">
             </div>
             <div class="product-info-container">
@@ -123,14 +141,17 @@
                 </div>
                 <div class="price">
                     $1299.00
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="7.png" alt="Alienware x14 R2 Gaming Laptop">
             </div>
             <div class="product-info-container">
@@ -140,14 +161,17 @@
                 </div>
                 <div class="price">
                     $1499.00
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="8.png" alt="Latitude 5440 Laptop">
             </div>
             <div class="product-info-container">
@@ -163,14 +187,17 @@
                 </div>
                 <div class="price">
                     $1049.00
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"> <div class="product-image-container">
                 <img src="9.png" alt="Latitude 7440 Laptop">
             </div>
             <div class="product-info-container">
@@ -184,14 +211,17 @@
                 </div>
                 <div class="price">
                     $1319.00
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+           
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="10.png" alt="Inspiron 16 Plus Laptop">
             </div>
             <div class="product-info-container">
@@ -201,14 +231,17 @@
                 </div>
                 <div class="price">
                     $749.00
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="11.png" alt="Surface Laptop Studio 2">
             </div>
             <div class="product-info-container">
@@ -218,14 +251,17 @@
                 </div>
                 <div class="price">
                     $2,499.99
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="12.png" alt="Surface Laptop Go 3">
             </div>
             <div class="product-info-container">
@@ -235,14 +271,17 @@
                 </div>
                 <div class="price">
                     $949.99
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="13.png" alt="Surface Laptop 5">
             </div>
             <div class="product-info-container">
@@ -252,14 +291,17 @@
                 </div>
                 <div class="price">
                     $1,249.99
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="14.png" alt="Surface Pro 9">
             </div>
             <div class="product-info-container">
@@ -269,14 +311,17 @@
                 </div>
                 <div class="price">
                     $1,249.99
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
         <section class="product">
-            <div class="product-image-container">
+            <div class="product-item"><div class="product-image-container">
                 <img src="15.png" alt="Surface Studio 2+">
             </div>
             <div class="product-info-container">
@@ -286,15 +331,17 @@
                 </div>
                 <div class="price">
                     $5,959.99
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <div class="quantity-selector">
+                        <button class="quantity-button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="quantity-button" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
                 </div>
-            </div>
+            </div></div>
+            
         </section>
     </main>
     <footer>  
-        
         <div class="footer-text">  
             <p>Contact us</p>  
         </div>  
@@ -308,4 +355,13 @@
         </div>  
     </footer>  
 </body>
+<script>
+    function changeQuantity(button, delta) {
+        const input = button.parentElement.querySelector('.quantity-input');
+        let value = parseInt(input.value);
+        value += delta;
+        if (value < 1) value = 1;
+        input.value = value;
+    }
+    </script>
 </html>
