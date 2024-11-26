@@ -436,3 +436,76 @@ footer {
 .footer-copyright {  
     font-size: 0.8em;  
 }
+
+@media (max-width: 768px) {
+    /*  */
+    
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo1-container1 { 
+        width: 100%;  /*  */
+        height: auto;  /*  */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;  /*  */
+    }
+    
+    .nav-links li {
+        margin-left: 0;  /*  */
+        margin-bottom: 10px;  /*  */
+    }
+
+    .hero-banner {
+        height: 50vh;  /*  */
+    }
+
+    .hero-content .title-container h1 {
+        font-size: 1.5rem;  /*  */
+    }
+
+    .hero-content .search-container input[type=text] {
+        width: 100%;  /*  */
+    }
+
+    .product-item {
+        flex-direction: column;  /*  */
+    }
+
+    .product-image-container,
+    .product-info-container {
+        width: 100%;  /*  */
+    }
+
+    .container, #about-us, #news {
+        padding: 10px;  /*  */
+    }
+
+    footer .footer-links a {
+        display: block;  /*  */
+        margin: 5px 0;  /*  */
+    }
+}
+
+@media (max-width: 480px) {
+    /*  */
+    
+    .hero-content .search-container input[type=text] {
+        width: 100%;  /*  */
+    }
+
+    .rating-snapshot {
+        flex-direction: column;  /*  */
+    }
+
+    .rating-snapshot label,
+    .rating-snapshot input[type="radio"],
+    .rating-snapshot button {
+        margin-bottom: 10px;  /*  */
+    }
+}
