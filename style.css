@@ -147,6 +147,12 @@ main {
     text-align: left; /* Text align left */
 }
 
+.mermaid {
+    width: 100%;
+    height: auto;
+    overflow: auto; /* Add scrollbars if needed */
+}
+
 .process-steps ol {
     counter-reset: process-step-counter 0;
     list-style-type: none; /* Remove default numbering */
@@ -186,6 +192,21 @@ main {
     border-right: 0.5em solid transparent;
     border-left: 0.5em solid transparent;
     z-index: 2;
+}
+
+.footer-text, .footer-links, .footer-copyright {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.footer-link {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
 
 /* Product Section */
