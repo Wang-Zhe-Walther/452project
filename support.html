@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Support</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
 </head>
 <body>
     <!-- nav -->
@@ -30,24 +34,22 @@
             <h1>If you need help, you can follow the following process for operation</h1>
         </div>
         <div class="process-container">
-            <ol class="process-steps">
-                <li>Customers encounter problems or need support</li>
-                <li>Customers visiting the company's support page or website</li>
-                <li>The customer first looks at the FAQ to see if there is a direct solution</li>
-                <li>If the FAQ does not solve the problem, the customer can choose to contact the support team</li>
-                <li>Customers can choose one of the following contact methods:
-                    <ul>
-                        <li>Chat online</li>
-                        <li>Email</li>
-                        <li>Telephone</li>
-                    </ul>
-                </li>
-                <li>Communicate with the customer and support team to describe the issue</li>
-                <li>Support team to assist clients in resolving issues</li>
-                <li>If the issue is not resolved, the customer can choose to continue communication or seek other support channels
-                    <br>Contact information
-                </li>
-            </ol>
+            <div class="mermaid">
+                graph TD;
+                    A[Start] --> B(Customers encounter problems or need support)
+                    B --> C(Customers visiting the company's support page or website)
+                    C --> D(The customer first looks at the FAQ to see if there is a direct solution)
+                    D -->|Is there a direct solution?| E{Yes}
+                    E --> F[End]
+                    D -->|No direct solution| G[The customer can choose one of the following contact methods]
+                    G --> H(Online Chat / Email / Telephone)
+                    H --> I(Communicate with the support team to describe the issue)
+                    I --> J(Support team assists clients in resolving issues)
+                    J -->|Is the issue resolved?| K{Yes}
+                    K --> F
+                    J -->|Issue not resolved| L[Customer can choose to continue communication or seek other support channels]
+                    L --> G
+            </div>
         </div>
     </main>
 
