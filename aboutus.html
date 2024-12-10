@@ -45,6 +45,20 @@
                    Thank you for choosing Computer Friend as your partner. We look forward to working together with you to create a better future!</p>
             </div>
         </section>
+        <section class="location-map">
+            <div class="container">
+                <h1>Location</h1>
+                <p>
+                    Address: 123RedDotRoad,RedDotVillage,BrokenHill,NewSouthWales,2880,Australia<br>
+                    Phone: +61 412 345 678<br>
+                    Email: Computer@Friend.com
+                </p>
+                <figure>
+                    <img src="map.jpg" alt="Map Location" class="map-image" />
+                    <button class="view-larger">View Larger Map</button>
+                </figure>
+            </div>
+        </section>
     </main>
     <footer>  
         <div class="footer-text">  
@@ -60,5 +74,34 @@
             <p>By Computer Friend © Made in 2024. All rights reserved.</p>  
         </div>  
     </footer>  
+
+    <script>
+        document.querySelector('.view-larger').addEventListener('click', function(event) {
+            event.preventDefault();
+            var img = document.querySelector('.map-image');
+            var modal = document.createElement('DIV');
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            modal.style.display = 'flex';
+            modal.style.justifyContent = 'center';
+            modal.style.alignItems = 'center';
+        
+            var modalImg = document.createElement('IMG');
+            modalImg.src = img.src;
+            modalImg.style.maxWidth = '90%';
+            modalImg.style.maxHeight = '90%';
+            modal.appendChild(modalImg);
+        
+            modal.addEventListener('click', function() {
+                document.body.removeChild(modal);
+            });
+        
+            document.body.appendChild(modal);
+        });
+        </script>
 </body>
 </html>
