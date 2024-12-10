@@ -1,585 +1,107 @@
-/* Student Name: Wang Zhe Walther */
-
-* {
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-}
-
-html, body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    font-size: 16px; /*  */
-}
-
-body {
-    color: #325050;
-    background: #fff;
-    font-family: 'Libre Baskerville', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    background: #2d6360;
-    padding: 10px 20px;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo1-container1 { 
-    width: 200px;  /* Increased logo container size */
-    height: 70px;  /* Increased logo container size */
-    display: flex;  
-    align-items: center;  
-}
-
-.logo1 {  
-    width: 100%;  
-    height: auto;  
-}
-
-.nav-links {  
-    list-style-type: none;  
-    padding: 0;  
-    margin: 0;  
-    display: flex;  
-}
-
-.nav-links li {  
-    margin-left: 20px;  /* Increased margin between links */
-}
-
-.nav-links li a {  
-    text-decoration: none;  
-    color: white;  
-    font-weight: bold;  
-    font-size: 1.2rem;  /* Increased font size */
-    padding: 10px 20px;  /* Increased padding */
-    border-radius: 5px;  
-    transition: background-color 0.3s ease;  
-}
-
-.nav-links li a:hover {  
-    background-color: darkgreen;  
-}
-
-main {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Index Page */
-.hero-banner {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden;
-}
-
-.hero-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-com-landing-page/lifestyle-sblp-2503-07-ch-hero3-2800x839.jpg?fmt=jpg&wid=2800&hei=839');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-}
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Text color for better visibility on the image */
-    text-align: center;
-    z-index: 1; /* Ensure content is above the image */
-}
-
-.hero-content .title-container h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.hero-content .search-container {
-    margin-bottom: 20px;
-}
-
-.hero-content .search-container input[type=text] {
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
-}
-
-.hero-content .search-container button {
-    padding: 10px 20px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Support Page */
-.support-page {
-    font-size: 1.2rem; /* Increase font size for support page */
-}
-
-.process-container {
-    max-width: 800px; /* Set a maximum width */
-    margin: 0 auto; /* Center the container */
-    padding: 20px;
-    background: #f9f9f9; /* Light background for better readability */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: left; /* Text align left */
-}
-
-.mermaid {
-    width: 100%;
-    height: auto;
-    overflow: auto; /* Add scrollbars if needed */
-}
-
-.process-steps ol {
-    counter-reset: process-step-counter 0;
-    list-style-type: none; /* Remove default numbering */
-    padding-left: 0; /* Remove default padding */
-}
-
-.process-steps ol > li {
-    position: relative;
-    padding-left: 2em;
-    margin-bottom: 10px;
-}
-
-.process-steps ol > li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1.5em;
-    height: 1.5em;
-    line-height: 1.5em;
-    text-align: center;
-    font-weight: bold;
-    color: #ddd;
-    background-color: #f5f5f5;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.process-steps ol > li::after {
-    content: "";
-    position: absolute;
-    left: 0.75em;
-    top: calc(50% - 0.25em);
-    width: 0;
-    height: 0;
-    border-top: 0.5em solid #ddd;
-    border-right: 0.5em solid transparent;
-    border-left: 0.5em solid transparent;
-    z-index: 2;
-}
-
-.footer-text, .footer-links, .footer-copyright {
-    text-align: center;
-    margin: 10px 0;
-}
-
-.footer-link {
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-}
-
-/* Product Section */
-.product {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adjusted grid columns */
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.product-item {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: center;
-}
-
-.product-image-container {
-    width: 50%; /* Set width to 50% */
-    padding: 10px;
-}
-
-.product-image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.product-info-container {
-    width: 50%; /* Set width to 50% */
-    padding: 10px;
-    text-align: left;
-}
-
-.product-info-container h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.product-description p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.price span {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.quantity-selector {
-    display: flex;
-    align-items: center;
-}
-
-.quantity-button {
-    background-color: #2d6360;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 0 5px;
-    transition: background-color 0.3s ease;
-}
-
-.quantity-button:hover {
-    background-color: darkgreen;
-}
-
-.quantity-input {
-    width: 50px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-/* About Us Page */
-.container {
-    max-width: 1200px; /* Set a maximum width for the container */
-    margin: 0 auto; /* Center the container */
-    padding: 20px;
-}
-
-#about-us {
-    text-align: left; /* Align text to the left */
-}
-
-#about-us h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #2d6360; /* Use the same color as the header */
-}
-
-#about-us p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.location-map {
-    margin-top: 20px;
-    padding: 20px;
-    text-align: left; /*  */
-}
-
-.location-map h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #2d6360; /* like Our Commitment  */
-}
-
-.location-map p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    max-width: 80%; /*  */
-    margin-left: 0; /*  */
-    margin-right: auto;
-}
-
-.location-map figure {
-    display: block; /*  */
-    position: relative;
-    margin-top: 20px; /*  */
-}
-
-.map-image {
-    max-width: 100%;
-    height: auto;
-    cursor: zoom-in; /*  */
-    transition: transform 0.3s ease;
-}
-
-.map-image:hover {
-    transform: scale(1.1); /*  */
-}
-
-.view-larger {
-    display: inline-block; /*  */
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #2d6360;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.view-larger:hover {
-    background-color: darkgreen;
-}
-
-/* News or Blog Page */
-.container {
-    max-width: 1200px; /* Set a maximum width for the container */
-    margin: 0 auto; /* Center the container */
-    padding: 20px;
-}
-
-#news {
-    text-align: left; /* Align text to the left */
-}
-
-#news h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #2d6360; /* Use the same color as the header */
-}
-
-#news p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-#customer-feedback {
-    text-align: left; /* Align text to the left */
-}
-
-#customer-feedback h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #2d6360; /* Use the same color as the header */
-}
-
-.rating-snapshot {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-}
-
-.rating-snapshot label {
-    font-size: 1.2rem;
-    margin-right: 5px;
-}
-
-.rating-snapshot input[type="radio"] {
-    margin-right: 10px;
-}
-
-.rating-snapshot button {
-    padding: 10px 20px;
-    background-color: #2d6360;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.rating-snapshot button:hover {
-    background-color: darkgreen;
-}
-
-/* Rating Chart */
-.rating-chart {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    height: 100px; /* Set a fixed height for the chart */
-    position: relative;
-}
-
-.rating-chart .bar {
-    width: 15%; /* Adjust the width as needed */
-    color: white;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 5px;
-    position: relative; /* Use relative positioning */
-    height: 0; /* Start with 0 height */
-    background-color: #4CAF50; /* Default color, will be overridden by JS */
-    transition: height 1s ease; /* Smooth transition for height change */
-}
-
-.rating-chart .bar::before {
-    content: attr(data-count);
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1rem;
-}
-
-.rating-chart .bar::after {
-    content: attr(data-label);
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1rem;
-    margin-top: 10px;
-}
-
-/* Rating Counts */
-.rating-counts {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    position: relative;
-    z-index: 1; /* Ensure it's above the bars */
-}
-
-.rating-counts span {
-    font-size: 1.2rem;
-}
-
-/* Footer */
-footer {
-    background-color: black;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
-}
-
-.footer-logo {  
-    margin-bottom: 10px;  
-}
-
-.footer-text {  
-    margin-bottom: 10px;  
-}
-
-.footer-links a {  
-    color: white;  
-    text-decoration: none;  
-    margin: 0 5px;  
-}
-
-.footer-copyright {  
-    font-size: 0.8em;  
-}
-
-@media (max-width: 768px) {
-    /*  */
-    
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo1-container1 { 
-        width: 100%;  /*  */
-        height: auto;  /*  */
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 20px;  /*  */
-    }
-    
-    .nav-links li {
-        margin-left: 0;  /*  */
-        margin-bottom: 10px;  /*  */
-    }
-
-    .hero-banner {
-        height: 50vh;  /*  */
-    }
-
-    .hero-content .title-container h1 {
-        font-size: 1.5rem;  /*  */
-    }
-
-    .hero-content .search-container input[type=text] {
-        width: 100%;  /*  */
-    }
-
-    .product-item {
-        flex-direction: column;  /*  */
-    }
-
-    .product-image-container,
-    .product-info-container {
-        width: 100%;  /*  */
-    }
-
-    .container, #about-us, #news {
-        padding: 10px;  /*  */
-    }
-
-    footer .footer-links a {
-        display: block;  /*  */
-        margin: 5px 0;  /*  */
-    }
-}
-
-@media (max-width: 480px) {
-    /*  */
-    
-    .hero-content .search-container input[type=text] {
-        width: 100%;  /*  */
-    }
-
-    .rating-snapshot {
-        flex-direction: column;  /*  */
-    }
-
-    .rating-snapshot label,
-    .rating-snapshot input[type="radio"],
-    .rating-snapshot button {
-        margin-bottom: 10px;  /*  */
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Us - Computer Friend</title>
+</head>
+<body>
+    <header>  
+        <div class="header-container">  
+            <div class="logo1-container1">  
+                <img src="logo1.png" alt="Computer Friend Logo" class="logo1">  
+            </div>  
+            <nav>  
+                <ul class="nav-links">  
+                    <li><a href="index.html">Home</a></li>  
+                    <li><a href="support.html">Support</a></li>  
+                    <li><a href="product.html">Product</a></li>  
+                    <li><a href="aboutus.html">About Us</a></li>  
+                    <li><a href="news.html">News or Blog</a></li>  
+                </ul>  
+            </nav>  
+        </div>  
+    </header>  
+    <main>
+        <section id="about-us">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Welcome to Computer Friend! We are a company dedicated to providing excellent hardware facilities for people in the IT industry, committed to providing customers with excellent services and solutions. Since 2003, we have always adhered to the philosophy of innovation, professionalism, and reliability, constantly pursuing excellence to meet the needs of our customers.</p>
+                
+                <h1>Our Mission</h1>
+                <p>Our mission is to become the leader of e-commerce websites, using our professional knowledge and experience to help clients achieve their goals and vision. We are committed to providing high-quality products and services to help customers achieve success.</p>
+                
+                <h1>Our Team</h1>
+                <p>Our team is composed of a group of passionate and talented professionals. They have rich experience and professional knowledge, and can provide customers with the best solutions. We value teamwork and believe that through joint efforts and collaboration, we can create even more outstanding results.</p>
+                
+                <h1>Our Strengths</h1>
+                <p>Professional knowledge: We have rich experience and expertise in IT equipment, and can provide professional solutions for customers.<br>
+                   Innovation spirit: We constantly pursue innovation and provide customers with more advanced and efficient services by introducing new technologies and concepts.<br>
+                   Customer First: We always prioritize customer needs and are committed to providing products and services that meet their needs.</p>
+                
+                <h1>Our Commitment</h1>
+                <p>We promise to provide excellent service and solutions to our customers, ensuring their satisfaction. We will continue to work hard, continuously improve and innovate to exceed customer expectations.<br>
+                   Thank you for choosing Computer Friend as your partner. We look forward to working together with you to create a better future!</p>
+            </div>
+        </section>
+        <section class="location-map">
+            <div class="container">
+                <h1>Location</h1>
+                <p>
+                    Address: 123RedDotRoad,RedDotVillage,BrokenHill,NewSouthWales,2880,Australia<br>
+                    Phone: +61 412 345 678<br>
+                    Email: Computer@Friend.com
+                </p>
+                <figure>
+                    <img src="map.jpg" alt="Map Location" class="map-image" />
+                    <button class="view-larger">View Larger Map</button>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>  
+        <div class="footer-text">  
+            <p>Contact us</p>  
+        </div>  
+        <div class="footer-links">  
+            <a href="#" class="footer-link">X</a>  
+            <a href="#" class="footer-link">Int</a>  
+            <a href="#" class="footer-link">Facebook</a>  
+        </div>  
+        <div class="footer-copyright">  
+            <h4>Walther Wang Zhe</h4>
+            <p>By Computer Friend © Made in 2024. All rights reserved.</p>  
+        </div>  
+    </footer>  
+
+    <script>
+        document.querySelector('.view-larger').addEventListener('click', function(event) {
+            event.preventDefault();
+            var img = document.querySelector('.map-image');
+            var modal = document.createElement('DIV');
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            modal.style.display = 'flex';
+            modal.style.justifyContent = 'center';
+            modal.style.alignItems = 'center';
+        
+            var modalImg = document.createElement('IMG');
+            modalImg.src = img.src;
+            modalImg.style.maxWidth = '90%';
+            modalImg.style.maxHeight = '90%';
+            modal.appendChild(modalImg);
+        
+            modal.addEventListener('click', function() {
+                document.body.removeChild(modal);
+            });
+        
+            document.body.appendChild(modal);
+        });
+        </script>
+</body>
+</html>
