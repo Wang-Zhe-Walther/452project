@@ -420,6 +420,7 @@ main {
     border: 1px solid #ddd;
     background-color: #f9f9f9; /* Light background color for separation */
     border-radius: 8px;
+    color: #325050; /* Set a specific color for the text inside articles */
 }
 
 /* Style headers within articles */
@@ -441,10 +442,12 @@ main {
     color: #ffffff;
 }
 
+
 /* Maintain existing paragraph styles */
 #news article p {
     font-size: 1.2rem;
     line-height: 1.6;
+    color: #000000;
 }
 
 .rating-snapshot {
