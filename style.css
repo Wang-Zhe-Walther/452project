@@ -321,6 +321,19 @@ main {
     text-align: left; /*  */
 }
 
+
+.location-map img.map-image {
+    max-width: 100%; /*  */
+    height: auto; /*  */
+    display: block; /*  */
+    margin: 0 auto; /*  */
+}
+
+/*  */
+.location-map figure {
+    max-width: 800px; /*  */
+    margin: 20px auto; /*  */
+}
 .location-map h1 {
     font-size: 2rem;
     margin-bottom: 20px;
