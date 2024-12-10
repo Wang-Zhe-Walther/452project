@@ -10,7 +10,7 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100%;
-    font-size: 16px; 
+    font-size: 16px;  
 }
 
 body {
@@ -318,21 +318,21 @@ main {
 .location-map {
     margin-top: 20px;
     padding: 20px;
-    text-align: left; /*  */
+    text-align: left;  
 }
 
 
 .location-map img.map-image {
-    max-width: 100%; /*  */
-    height: auto; /*  */
-    display: block; /*  */
-    margin: 0 auto; /*  */
+    max-width: 100%;  
+    height: auto;  
+    display: block;  
+    margin: 0 auto;  
 }
 
-/*  */
+ 
 .location-map figure {
-    max-width: 800px; /*  */
-    margin: 20px auto; /*  */
+    max-width: 800px;  
+    margin: 20px auto;  
 }
 .location-map h1 {
     font-size: 2rem;
@@ -344,30 +344,30 @@ main {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    max-width: 80%; /*  */
-    margin-left: 0; /*  */
+    max-width: 80%;  
+    margin-left: 0;  
     margin-right: auto;
 }
 
 .location-map figure {
-    display: block; /*  */
+    display: block;  
     position: relative;
-    margin-top: 20px; /*  */
+    margin-top: 20px;  
 }
 
 .map-image {
     max-width: 100%;
     height: auto;
-    cursor: zoom-in; /*  */
+    cursor: zoom-in;  
     transition: transform 0.3s ease;
 }
 
 .map-image:hover {
-    transform: scale(1.1); /*  */
+    transform: scale(1.1);  
 }
 
 .view-larger {
-    display: inline-block; /*  */
+    display: inline-block;  
     margin-top: 10px;
     padding: 5px 10px;
     background-color: #2d6360;
@@ -525,7 +525,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /*  */
+     
     
     .header-container {
         flex-direction: column;
@@ -533,66 +533,66 @@ footer {
     }
 
     .logo1-container1 { 
-        width: 100%;  /*  */
-        height: auto;  /*  */
+        width: 100%;   
+        height: auto;   
     }
 
     .nav-links {
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 20px;  /*  */
+        margin-top: 20px;   
     }
     
     .nav-links li {
-        margin-left: 0;  /*  */
-        margin-bottom: 10px;  /*  */
+        margin-left: 0;   
+        margin-bottom: 10px;   
     }
 
     .hero-banner {
-        height: 50vh;  /*  */
+        height: 50vh;   
     }
 
     .hero-content .title-container h1 {
-        font-size: 1.5rem;  /*  */
+        font-size: 1.5rem;   
     }
 
     .hero-content .search-container input[type=text] {
-        width: 100%;  /*  */
+        width: 100%;   
     }
 
     .product-item {
-        flex-direction: column;  /*  */
+        flex-direction: column;   
     }
 
     .product-image-container,
     .product-info-container {
-        width: 100%;  /*  */
+        width: 100%;   
     }
 
     .container, #about-us, #news {
-        padding: 10px;  /*  */
+        padding: 10px;   
     }
 
     footer .footer-links a {
-        display: block;  /*  */
-        margin: 5px 0;  /*  */
+        display: block;   
+        margin: 5px 0;   
     }
 }
 
 @media (max-width: 480px) {
-    /*  */
+     
     
     .hero-content .search-container input[type=text] {
-        width: 100%;  /*  */
+        width: 100%;   
     }
 
     .rating-snapshot {
-        flex-direction: column;  /*  */
+        flex-direction: column;   
     }
 
     .rating-snapshot label,
     .rating-snapshot input[type="radio"],
     .rating-snapshot button {
-        margin-bottom: 10px;  /*  */
+        margin-bottom: 10px;   
     }
 }
