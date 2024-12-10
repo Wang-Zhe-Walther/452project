@@ -315,6 +315,59 @@ main {
     margin-bottom: 20px;
 }
 
+.location-map {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left; /*  */
+}
+
+.location-map h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2d6360; /* like Our Commitment  */
+}
+
+.location-map p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 80%; /*  */
+    margin-left: 0; /*  */
+    margin-right: auto;
+}
+
+.location-map figure {
+    display: block; /*  */
+    position: relative;
+    margin-top: 20px; /*  */
+}
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+    cursor: zoom-in; /*  */
+    transition: transform 0.3s ease;
+}
+
+.map-image:hover {
+    transform: scale(1.1); /*  */
+}
+
+.view-larger {
+    display: inline-block; /*  */
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #2d6360;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-larger:hover {
+    background-color: darkgreen;
+}
+
 /* News or Blog Page */
 .container {
     max-width: 1200px; /* Set a maximum width for the container */
